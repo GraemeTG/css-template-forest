@@ -20,11 +20,12 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body ontouchstart>
   <!-- https://ishadeed.com/article/website-headers-flexbox/ -->
   <!-- Add your site or application content here -->
 
@@ -37,11 +38,16 @@
           menu
         </button>
         <ul class="nav__wrapper">
-          <li class="nav__item"><a href="#">Home-index</a></li>
-          <li class="nav__item"><a href="#">About</a></li>
-          <li class="nav__item"><a href="#">Services</a></li>
-          <li class="nav__item"><a href="#">index.html</a></li>
-          <li class="nav__item"><a href="#">header.css</a></li>
+          <li class="nav__item"><a href="#">Home</a></li>
+              
+          <li class="nav__item dropdown">
+            <a href="#" class="dropbtn">Headers</a>
+            <div class="dropdown-content">
+              <a href="#">Header 1</a>
+              <a href="#">Header 2</a>
+              <a href="#">Header 3</a>
+            </div>
+          </li>
         </ul>
       </nav>
       <a href="/track-shipment" class="button">Track</a>
